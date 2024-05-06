@@ -1,8 +1,11 @@
 #root {
-  max-width: 1280px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
+}
+* > {
+  border: 1px solid green;
 }
 
 .logo {
@@ -16,6 +19,62 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+nav,
+ul {
+  display: flex;
+  padding: 1rem;
+}
+ul {
+  gap: 1rem;
+  list-style-type: none;
+}
+nav {
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+.product-item {
+  margin: 0 auto;
+  margin-block-start: 6rem;
+  max-width: 550px;
+}
+.product-item p {
+  padding: 1rem 0;
+}
+.product-list {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem 1rem;
+  margin-block-start: 8rem;
+}
+.product-card {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.product-card img {
+  object-fit: contain;
+  aspect-ratio: 1/1;
+}
+.product-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px;
+  font-weight: 800;
 }
 
 @keyframes logo-spin {
